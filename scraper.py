@@ -95,7 +95,7 @@ def grabexcellinks(URL):
     #use cssselect method on 'root' to grab all <a> tags within a <p> tag - and put in a new list variable 'links'
     links = root.cssselect('p a')
     #for each item in that list variable, from the first to the second last [0:-1], put it in the variable 'link'
-    for link in links[1:4]:
+    for link in links[2:5]:
         #and print the text_content of that (after the string "link text:")
         try:
             print "link text:", link.text_content()
@@ -108,7 +108,7 @@ def grabexcellinks(URL):
         if linkurl[-3:] == 'xls':
             print "That's an Excel sheet"
         #run the function scrapesheets, using that variable as the parameter
-        #scrapespreadsheet(linkurl)
+        scrapespreadsheet(linkurl)
 
 grabexcellinks(URL)
 
