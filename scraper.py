@@ -22,7 +22,10 @@ def cellval(cell, datemode):
     if cell.ctype == xlrd.XL_CELL_BOOLEAN:  return cell.value == 1
     return cell.value
 
-URL = 'http://webarchive.nationalarchives.gov.uk/20130402145952/http://transparency.dh.gov.uk/2012/10/26/winter-pressures-daily-situation-reports-2012-13/'
+#Note: this URL uses frames, so you cannot grab the full data:
+#http://webarchive.nationalarchives.gov.uk/20130402145952/http://transparency.dh.gov.uk/2012/10/26/winter-pressures-daily-situation-reports-2012-13/
+#However, this one, with 'content' in the URL does not:
+URL = 'http://webarchive.nationalarchives.gov.uk/content/20130402145952/http://transparency.dh.gov.uk/2012/10/26/winter-pressures-daily-situation-reports-2012-13/'
 
 #set a variable for the spreadsheet location
 XLS = 'http://webarchive.nationalarchives.gov.uk/20130402145952/http://transparency.dh.gov.uk/files/2012/10/DailySR-Pub-file-WE-11-11-123.xls'
