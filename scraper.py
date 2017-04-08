@@ -97,7 +97,10 @@ def grabexcellinks(URL):
     #for each item in that list variable, from the first to the second last [0:-1], put it in the variable 'link'
     for link in links[1:4]:
         #and print the text_content of that (after the string "link text:")
-        print "link text:", link.text_content()
+        try:
+            print "link text:", link.text_content()
+        except:
+            print "link text: error"
         #use the attrib.get method on 'link' to grab the href= attribute of the HTML, and put in new 'linkurl' variable
         linkurl = link.attrib.get('href')
         #print it
