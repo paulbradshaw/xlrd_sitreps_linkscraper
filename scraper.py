@@ -105,6 +105,8 @@ def grabexcellinks(URL):
         linkurl = link.attrib.get('href')
         #print it
         print linkurl
+        if linkurl[-3:] == 'xls':
+            print "That's an Excel sheet"
         #run the function scrapesheets, using that variable as the parameter
         #scrapespreadsheet(linkurl)
 
