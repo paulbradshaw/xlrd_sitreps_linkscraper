@@ -41,7 +41,7 @@ def scrapespreadsheet(XLS):
 #we can use that number to initialise a new variable
     sheetstotal = book.nsheets
 #and then use that variable to create the end value in a range of numbers, called 'sheetsrange'
-    sheetsrange = range(3,4) #(0,sheetstotal)
+    sheetsrange = range(1,2) #(0,sheetstotal)
 #both lines could of course have been combined into one like this:
 #sheetsrange = range(0,book.nsheets)
 
