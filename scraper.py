@@ -22,10 +22,10 @@ def cellval(cell, datemode):
     if cell.ctype == xlrd.XL_CELL_BOOLEAN:  return cell.value == 1
     return cell.value
 
-URL = 'http://webarchive.nationalarchives.gov.uk/20130402145952/http://transparency.dh.gov.uk/files/2012/10/DailySR-Pub-file-WE-11-11-123.xls'
+URL = 'http://webarchive.nationalarchives.gov.uk/20130402145952/http://transparency.dh.gov.uk/2012/10/26/winter-pressures-daily-situation-reports-2012-13/'
 
 #set a variable for the spreadsheet location
-XLS = 'https://www.wp.dh.gov.uk/transparency/files/2012/10/DailySR-Pub-file-WE-11-11-123.xls'
+XLS = 'http://webarchive.nationalarchives.gov.uk/20130402145952/http://transparency.dh.gov.uk/files/2012/10/DailySR-Pub-file-WE-11-11-123.xls'
 #use the scrape function on that spreadsheet to create a new variable
 
 def scrapespreadsheet(XLS):
